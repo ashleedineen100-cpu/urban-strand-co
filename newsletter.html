@@ -1,0 +1,285 @@
+<!-- Ash Dineen, 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Portfolio Website - Newsletter Page -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Newsletter signup page for Urban Strand & Co portfolio website">
+
+    <meta name="author"
+          content="Ash Dineen">
+
+    <title>Newsletter | Urban Strand & Co.</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Website favicon -->
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+
+        <img src="images/logo.png"
+             alt="Urban Strand and Co logo"
+             class="logo">
+
+        <h1 id="main-heading">urban strand &amp; co.</h1>
+
+    </header>
+
+    <!-- Main Navigation -->
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="ad_A3_about.html">About</a></li>
+
+            <li><a href="ad_A3_resume.html">Resume</a></li>
+
+            <li><a href="ad_A3_web_skills.html">Web Skills</a></li>
+
+            <li>
+                <a href="critical_thinking.html">
+                    Critical Thinking
+                </a>
+            </li>
+
+            <li>
+                <a href="problem_solving.html">
+                    Problem Solving
+                </a>
+            </li>
+
+            <li>
+                <a href="newsletter.html" class="active">
+                    Newsletter
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main Page Content -->
+    <main class="container">
+
+        <h2>Newsletter Signup</h2>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+
+            <h3>Stay Updated</h3>
+
+			<p class="highlight center">
+			    Sign up to receive updates and news
+			    from Urban Strand &amp; Co.
+			</p>
+
+        </section>
+
+        <!-- Newsletter Form Section -->
+        <section class="newsletter-form">
+
+            <h3>Newsletter Signup Form</h3>
+			
+			<p class="center">
+			   * Required fields must be completed before submission
+			</p>
+
+            <form action=""
+                  method="post"
+                  onsubmit="return validateForm()">
+
+                <!-- First Name -->
+                <label for="firstname">
+                    First Name *
+                </label>
+
+                <input type="text"
+                       id="firstname"
+                       name="firstname"
+                       maxlength="60"
+                       required>
+
+                <!-- Last Name -->
+                <label for="lastname">
+                    Last Name *
+                </label>
+
+                <input type="text"
+                       id="lastname"
+                       name="lastname"
+                       maxlength="60"
+                       required>
+
+                <!-- Email Address -->
+                <label for="email">
+                    Email Address *
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       maxlength="60"
+                       required>
+
+                <!-- Age Range -->
+				
+				<fieldset>
+				<legend>Age Range</legend>
+                
+				<label>
+				    <input type="radio"
+				           name="age"
+				           value="15-25">
+				    15 - 25
+				</label>
+
+				<label>
+				    <input type="radio"
+				           name="age"
+				           value="26-35">
+				    26 - 35
+				</label>
+
+				<label>
+				    <input type="radio"
+				           name="age"
+				           value="36-45">
+				    36 - 45
+				</label>
+
+				<label>
+				    <input type="radio"
+				           name="age"
+				           value="46-55">
+				    46 - 55
+				</label>
+
+				<label>
+				    <input type="radio"
+				           name="age"
+				           value="55+">
+				    55+
+				</label>
+				</fieldset>
+                
+				<fieldset>
+				<legend>Areas of Interest / Services</legend> 
+				
+				<div class="checkbox-group"> 
+					
+					<label> 
+						<input type="checkbox" 
+						name="interest" 
+						value="fashion"> 
+					Fashion Trends 
+				    </label> 
+				
+				    <label> 
+					    <input type="checkbox" 
+					    name="interest" 
+					    value="arrivals"> 
+				    New Arrivals 
+			        </label> 
+					
+					<label> 
+						<input type="checkbox" 
+						name="interest" 
+						value="accessories"> 
+					Accessories 
+				    </label> 
+					
+					<label> 
+						<input type="checkbox" 
+						name="interest" 
+						value="seasonal"> 
+					Seasonal Collections 
+				    </label> 
+					
+					<label> 
+						<input type="checkbox" 
+						name="interest" 
+						value="offers"> 
+						Special Offers 
+					</label> 
+				</div>
+				</fieldset>
+
+
+                <!-- Comments -->
+                <label for="comments">
+                    Additional Comments
+                </label>
+
+                <textarea id="comments"
+                          name="comments"
+                          cols="60"
+                          rows="3"></textarea>
+
+                <!-- Form Buttons -->
+                <div class="buttons">
+
+                    <input type="submit"
+                           value="Submit">
+
+                    <input type="reset"
+                           value="Reset">
+
+                </div>
+				
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+
+        <div>
+
+            <p>
+                Email:
+                <a href="mailto:ashlee.dineen100@gmail.com">
+                    ashlee.dineen100@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:0455903334">
+                    0455 903 334
+                </a>
+            </p>
+
+        </div>
+
+        <p>
+            &copy; 2026 Urban Strand &amp; Co.
+            All content is original or used with permission.
+        </p>
+
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
